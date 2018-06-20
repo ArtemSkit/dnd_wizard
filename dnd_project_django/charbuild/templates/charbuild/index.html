@@ -1,0 +1,10 @@
+{% extends "charbuild/layout.html" %} {% block content %}
+<h1>{{title}}</h1>
+<ul class="collection">
+    {% for chars in chars %}
+    <li class="collection-item">
+        <a href="/charbuild/details/{{chars.id}}">{{chars.title}}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}

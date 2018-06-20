@@ -1,0 +1,13 @@
+{% extends "charbuild/layout.html" %} {% block content %}
+<h1>{{title}}</h1>
+<ul class="collection">
+    <div class="card">
+        <div class="card-content">
+            {{char.body}}
+        </div>
+        <div class="card-action">
+            {{char.created_at}}
+        </div>
+    </div>
+    <a href="/charbuild" class="btn">Go Back</a>
+    {% endblock content %}
